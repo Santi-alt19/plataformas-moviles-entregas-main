@@ -1,0 +1,61 @@
+@media screen and (min-width: 400px){
+    html body{
+        background-color: #234;
+    }
+}
+@media screen and (max-width: 800px){
+    h1{
+        text-align: center;
+    }
+}
+
+@media screen and (orientation: landscape) { /*orientacion: horizontal*/
+    article {
+      max-width: 50ch;
+    }
+  }
+
+@media screen and (min-height: 200px) { /* minimo de la altura */
+    h1 {
+      background-color:gold; /* Cambia este valor al color deseado */
+    }
+}
+
+@media print { /*cambia cuando se imprime, punto 5*/
+    p {
+      font-family: sans-serif;
+    }
+}
+
+@media (prefers-color-scheme: light) { /*preferenca de color*/
+    body, h1 {
+      color: #111;
+      background-color: #DDD;
+    }
+  }
+
+@media screen and (hover: none) { /*7*/
+    a {
+      background-color: #212;
+      padding: 2px 5px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 899px) {
+    figure, img {
+      display: none;
+    }
+}
+  
+@media screen and (min-width: 200px) and (max-width: 400px) { /*9*/
+    img {
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {  /*10*/
+    article {
+      background-color: #667;
+    }
+  }
